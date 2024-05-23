@@ -4,7 +4,7 @@
 //  - for문 버전
 for (let s = 2; s < 10; s++) {
     for (let i = 1; i < 10; i++)  {
-        console.log(i*s);
+        console.log(i * s);
     }
 }
 
@@ -13,10 +13,10 @@ let j = 2;
 while (j < 10){
 let i = 1;
 while (i < 10) {
-    console.log(j*i);
-i = i + 1
+    console.log(j * i);
+i = i + 1;
 }
-j = j + 1
+j = j + 1;
 }
 
 // 연습문제2.
