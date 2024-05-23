@@ -1,7 +1,7 @@
 //  연습문제 1.
 //  2단부터 ~ 9단까지 구구단표 출력
-//  - for문 버전
 
+//  - for문 버전
 for (let s = 2; s < 10; s++) {
     for (let i = 1; i < 10; i++)  {
         console.log(i*s);
@@ -9,7 +9,6 @@ for (let s = 2; s < 10; s++) {
 }
 
 //  - while문 버전
-
 let j = 2;
 while (j < 10){
 let i = 1;
@@ -45,7 +44,6 @@ for (let i = 5; i > 0; i--) {
     }
     console.log(line);
 }
-
 
 //  - while문 버전
 let y = 5;
