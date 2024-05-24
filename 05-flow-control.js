@@ -60,3 +60,6 @@ while (x < y) {
 console.log(line);
 y = y - 1;
 }
+
+//  TODO : for ... in, for ... of
+//      array extended 수업 이후에 추가 진행
