@@ -31,4 +31,4 @@ console.log(parseFloat("123.456"));
 let v = parseInt("a123.456");   //  변환할 수 없는 형태의 데이터 변환 -> NaN (Not a Number)
 console.log(v, "->", typeof v);
 console.log(v + 2024);
-console.log(isNaN(v+2024));
+console.log(isNaN(v + 2024));

@@ -50,4 +50,4 @@ console.log(v, "->", typeof v);
 v = 2024;
 console.log(v, "->", typeof v);
 v = 10 > 8;
-console.log("10 > 8?", v, "->", typeof v);
+console.log("10 > 8 ?", v, "->", typeof v);
