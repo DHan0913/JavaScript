@@ -47,7 +47,7 @@
                     $("#info").html(data);
                 })
                 .catch(error => {
-                    console.error(error);
+                    console.error(error)
                 })
             });
 
@@ -104,7 +104,25 @@
                     success: function(response) {
                         console.log(response);  
                         
-                        window.open("http://localhost:3000/movies/"+ movieId);
+
+                        for (let i = 0; i < movies.length; i++) {
+                            // 개별 영화 정보 받아오기 
+                            let movie = movies[i];
+                            let id = movie.id;
+                            let title = movie.title;
+                            let director = movie.director;
+                            let poster = "http://localhost:3000/images/" + movie.image;
+                            // 영화 정보
+                            if (movie.id == movieId) {
+                            // tr 요소를 생성 -> 정보 연결 -> table#list의 자식 요소로 추가
+                            const tr = $("<tr>");   // tr 요소 생성 
+                            tr.html(`
+                                <td><img src="${poster}" class="poster" data-id="${id}"></td>
+                                <td>${title}</td>
+                                <td>${director}</td>
+                            `);
+                            }
+                        }
                         
                     },
                     error: function(request, status, error) {
